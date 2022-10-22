@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjY4LCJuYW1lIjoiaWhzYW4iLCJlbWFpbCI6Imloc2FuQGdtYWlsLmNvbSIsImlhdCI6MTY2NDc3MDUwNCwiZXhwIjoxNjY0NzcwNTI0fQ.9xHVhHwUvcyA19JP__B51IOJiPBYKDlTvIBGoy9whZM
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ihsan",
+    "email": "ihsan@gmail.com",
+    "password": "1234",
+    "confPassword": "1234"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ihsan@gmail.com",
+    "password": "1234"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
